@@ -7,5 +7,79 @@
 	</head>
 	<body>
 		<h1>Programming Language Suggester</h1>
+		<h2>New to coding? Where would you like to start?</h2>
+		<p>Deciding on which programming language you would like to learn to get started with coding can be intimidating. There are so many different languages to choose from, and while all of them are useful, there are certain advantages to learning certain languages. That's why this app will help decide that for you!</p>
+		<h3>Answer the following questions to get suggestions on which language you should learn first!</h3>
+
+		<form>
+			Do you prefer to focus on simplicity and productivity?
+			<label>
+				<input type="radio" id="q1" name="q1" value="yes">
+				Yes
+			</label>
+			<label>
+				<input type="radio" id="q1" name="q1" value="no">
+				No
+			</label>
+			<br>
+
+			Do you want to build many types of secure and robust applications?
+			<label>
+				<input type="radio" id="q2" name="q2" value="yes">
+				Yes
+			</label>
+			<label>
+				<input type="radio" id="q2" name="q2" value="no">
+				No
+			</label>
+			<br>
+
+			Do you want to start with the most common programming language?
+			<label>
+				<input type="radio" id="q3" name="q3" value="yes">
+				Yes
+			</label>
+			<label>
+				<input type="radio" id="q3" name="q3" value="no">
+				No
+			</label>
+			<br>
+
+			Do you want to write as little code as you need to?
+			<label>
+				<input type="radio" id="q4" name="q4" value="yes">
+				Yes
+			</label>
+			<label>
+				<input type="radio" id="q4" name="q4" value="no">
+				No
+			</label>
+			<br>
+
+			Would you like to start with an easy language?
+			<label>
+				<input type="radio" id="q5" name="q5" value="yes">
+				Yes
+			</label>
+			<label>
+				<input type="radio" id="q5" name="q5" value="no">
+				No
+			</label>
+			<br>
+
+			<button type="submit">Find your language!</button>
+		</form>
+
+		<div id="ruby" class="hidden">
+			Based on your answers, you should learn Ruby as your first programming language.
+		</div>
+
+		<div id="c#" class="hidden">
+			Based on your answers, you should learn C# as your first programming language.
+		</div>
+
+		<div id="javascript" class="hidden">
+			Based on your answers, you should learn JavaScript as your first programming language.
+		</div>
 	</body>
 </html>
