@@ -4,12 +4,47 @@ window.addEventListener("load", function() {
 	let ruby = document.getElementById("ruby");
 	let csharp = document.getElementById("csharp");
 	let javascript = document.getElementById("javascript");
-});
 
 	form.addEventListener("submit", function(event) {
-		const q1 = document.getElementById("q1").value;
-		const q2 = document.getElementById("q2").value;
-		const q3 = document.getElementById("q3").value;
-		const q4 = document.getElementById("q4").value;
-		const q5 = document.getElementById("q5").value;
+		const qOneYes = document.getElementById("qOneYes").value;
+		const qOneNo = document.getElementById("qOneNo").value;
+		const qTwoYes = document.getElementById("qTwoYes").value;
+		const qTwoNo = document.getElementById("qTwoNo").value;
+		const qThreeYes = document.getElementById("qThreeYes").value;
+		const qThreeNo = document.getElementById("qThreeNo").value;
+		const qFourYes = document.getElementById("qFourYes").value;
+		const qFourNo = document.getElementById("qFourNo").value;
+		const qFiveYes = document.getElementById("qFiveYes").value;
+		const qFiveNo = document.getElementById("qFiveNo").value;
+
+		ruby.setAttribute("class", "hidden");
+		csharp.setAttribute("class", "hidden");
+		javascript.setAttribute("class", "hidden");
+		event.preventDefault();
+
+		if (q1 && q2 && q3 && q4 && q5) {
+			if (q1 === yes && q4 === yes) {
+				document.getElementById("ruby").removeAttribute("class");
+			} else if (q2 === yes && q5 === yes) {
+				document.getElementById("csharp").removeAttribute("class");
+			} else if (q3 === yes && q2 === yes) {
+				document.getElementById("javascript").removeAttribute("class");
+			}
+		}
 	});
+
+	form.addEventListener("submit", function(){
+		resetBtn.removeAttribute("class");
+	});
+
+	resetBtn.addEventListener("click", function(){
+		ruby.setAttribute("class", "hidden");
+		csharp.setAttribute("class", "hidden");
+		javascript.setAttribute("class", "hidden");
+		document.getElementById("q1").value = null;
+		document.getElementById("q2").value = null;
+		document.getElementById("q3").value = null;
+		document.getElementById("q4").value = null;
+		document.getElementById("q5").value = null;
+	});
+});
