@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
 		javascript.setAttribute("class", "hidden");
 		event.preventDefault();
 
-		if (q1 && q2 && q3 && q4 && q5) {
+		if (qOneYes && qOneNo && qTwoYes && qTwoNo && qThreeYes && qThreeNo && qFourYes && qFourNo && qFiveYes && qFiveNo) {
 			if (q1 === yes && q4 === yes) {
 				document.getElementById("ruby").removeAttribute("class");
 			} else if (q2 === yes && q5 === yes) {
