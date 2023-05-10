@@ -25,11 +25,11 @@ window.addEventListener("load", function() {
 		event.preventDefault();
 
 		if (qOneYes && qOneNo && qTwoYes && qTwoNo && qThreeYes && qThreeNo && qFourYes && qFourNo && qFiveYes && qFiveNo) {
-			if (q1 === yes && q4 === yes) {
+			if (qOneYes === yes && qOneFour === yes) {
 				document.getElementById("ruby").removeAttribute("class");
-			} else if (q2 === yes && q5 === yes) {
+			} else if (qTwoYes === yes && qFiveYes === yes) {
 				document.getElementById("csharp").removeAttribute("class");
-			} else if (q3 === yes && q2 === yes) {
+			} else if (qThreeYes === yes && qTwoYes === yes) {
 				document.getElementById("javascript").removeAttribute("class");
 			}
 		}
