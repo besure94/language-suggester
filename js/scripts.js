@@ -16,6 +16,8 @@ window.addEventListener("load", function() {
 		const qFourNo = document.getElementById("qFourNo").value;
 		const qFiveYes = document.getElementById("qFiveYes").value;
 		const qFiveNo = document.getElementById("qFiveNo").value;
+		const yes = document.querySelector("input[name'operator']:checked").value;
+		const no = document.querySelector("input[name='operator']:checked").value;
 
 		ruby.setAttribute("class", "hidden");
 		csharp.setAttribute("class", "hidden");
