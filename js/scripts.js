@@ -27,15 +27,15 @@ window.addEventListener("load", function() {
 		javascript.setAttribute("class", "hidden");
 		event.preventDefault();
 
-		if (qOneYes && qOneNo && qTwoYes && qTwoNo && qThreeYes && qThreeNo && qFourYes && qFourNo && qFiveYes && qFiveNo) {
-			if (qOneYes === yes && qOneFour === yes) {
-				document.getElementById("ruby").removeAttribute("class");
-			} else if (qTwoYes === yes && qFiveYes === yes) {
-				document.getElementById("csharp").removeAttribute("class");
-			} else if (qThreeYes === yes && qTwoYes === yes) {
-				document.getElementById("javascript").removeAttribute("class");
-			}
-		}
+		// if (qOneYes && qOneNo && qTwoYes && qTwoNo && qThreeYes && qThreeNo && qFourYes && qFourNo && qFiveYes && qFiveNo) {
+		// 	if (qOneYes === yes && qOneFour === yes) {
+		// 		document.getElementById("ruby").removeAttribute("class");
+		// 	} else if (qTwoYes === yes && qFiveYes === yes) {
+		// 		document.getElementById("csharp").removeAttribute("class");
+		// 	} else if (qThreeYes === yes && qTwoYes === yes) {
+		// 		document.getElementById("javascript").removeAttribute("class");
+		// 	}
+		// }
 	});
 
 	form.addEventListener("submit", function(){
@@ -46,15 +46,20 @@ window.addEventListener("load", function() {
 		ruby.setAttribute("class", "hidden");
 		csharp.setAttribute("class", "hidden");
 		javascript.setAttribute("class", "hidden");
-		document.getElementById("qOneYes").value = null;
-		document.getElementById("qOneNo").value = null;
-		document.getElementById("qTwoYes").value = null;
-		document.getElementById("qTwoNo").value = null;
-		document.getElementById("qThreeYes").value = null;
-		document.getElementById("qThreeNo").value = null;
-		document.getElementById("qFourYes").value = null;
-		document.getElementById("qFourNo").value = null;
-		document.getElementById("qFiveYes").value = null;
-		document.getElementById("qFiveNo").value = null;
+		const q1 = document.querySelector("input[name='q1']:checked").value = null;
+		const q2 = document.querySelector("input[name='q2']:checked").value = null;
+		const q3 = document.querySelector("input[name='q3']:checked").value = null;
+		const q4 = document.querySelector("input[name='q4]:checked").value = null;
+		const q5 = document.querySelector("input[name='q5']:checked").value = null;
+		// document.getElementById("qOneYes").value = null;
+		// document.getElementById("qOneNo").value = null;
+		// document.getElementById("qTwoYes").value = null;
+		// document.getElementById("qTwoNo").value = null;
+		// document.getElementById("qThreeYes").value = null;
+		// document.getElementById("qThreeNo").value = null;
+		// document.getElementById("qFourYes").value = null;
+		// document.getElementById("qFourNo").value = null;
+		// document.getElementById("qFiveYes").value = null;
+		// document.getElementById("qFiveNo").value = null;
 	});
 });
