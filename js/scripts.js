@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
 	let ruby = document.getElementById("ruby");
 	let csharp = document.getElementById("csharp");
 	let javascript = document.getElementById("javascript");
+	let python = document.getElementById("python");
 
 	form.addEventListener("submit", function(event) {
 		const yes = "yes";
@@ -17,6 +18,7 @@ window.addEventListener("load", function() {
 		ruby.setAttribute("class", "hidden");
 		csharp.setAttribute("class", "hidden");
 		javascript.setAttribute("class", "hidden");
+		python.setAttribute("class", "hidden");
 		event.preventDefault();
 
 		if (questOne && questTwo && questThree && questFour && questFive) {
@@ -39,6 +41,7 @@ window.addEventListener("load", function() {
 		ruby.setAttribute("class", "hidden");
 		csharp.setAttribute("class", "hidden");
 		javascript.setAttribute("class", "hidden");
+		python.setAttribute("class", "hidden");
 		document.getElementById("questOne").value = null;
 		document.getElementById("questTwo").value = null;
 		document.getElementById("questThree").value = null;
