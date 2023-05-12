@@ -28,6 +28,8 @@ window.addEventListener("load", function() {
 				document.getElementById("csharp").removeAttribute("class");
 			} else if (questOne === no && questTwo === yes && questThree === yes || questFour === no && questFive === yes) {
 				document.getElementById("javascript").removeAttribute("class");
+			} else {
+				document.getElementById("python").removeAttribute("class");
 			}
 		}
 
