@@ -20,11 +20,11 @@ window.addEventListener("load", function() {
 		event.preventDefault();
 
 		if (q1 && q2 && q3 && q4 && q5) {
-			if (q1 === yes && q2 === yes && q3 === no) {
+			if (q1 === yes && q2 === yes && q3 === no || q4 === no && q5 === no) {
 				document.getElementById("ruby").removeAttribute("class");
-			} else if (q1 === no && q2 === yes && q3 === no) {
+			} else if (q1 === no && q2 === yes && q3 === no || q4 === yes && q5 === yes) {
 				document.getElementById("csharp").removeAttribute("class");
-			} else if (q1 === no && q2 === yes && q3 === yes) {
+			} else if (q1 === no && q2 === yes && q3 === yes || q4 === no && q5 === yes) {
 				document.getElementById("javascript").removeAttribute("class");
 			}
 		}
