@@ -1,5 +1,23 @@
+body {
+	background-color: #8d99ae;
+}
+
+button {
+	background-color: #8d99ae;
+	color: #001427;
+}
+
+.container {
+	background-color: #001427;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #ffffff;
+}
+
 .jumbotron {
 	text-align: center;
+	color: #bf0603;
+	background-color: #001427;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hidden {
