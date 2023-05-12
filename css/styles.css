@@ -1,25 +1,35 @@
 body {
-	background-color: #8d99ae;
+	background-color: #0b090a;
 }
 
 button {
-	background-color: #8d99ae;
+	background-color: #ffffff;
 	color: #001427;
+	font-weight: 600;
+}
+
+.header {
+	color: #0081a7;
 }
 
 .container {
-	background-color: #001427;
+	background-color: #0b090a;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #ffffff;
 }
 
 .jumbotron {
 	text-align: center;
-	color: #bf0603;
-	background-color: #001427;
+	color: #0081a7;
+	background-color: #0b090a;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
 }
 
 .hidden {
 	display: none;
+}
+
+.results {
+	color: #0081a7;
 }
