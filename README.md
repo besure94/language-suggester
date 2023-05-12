@@ -13,7 +13,7 @@
 
 ## Description
 
-This application allows users who are new to coding to answer five "yes" or "no" questions to determine which programming language they should learn first. Depending on the combination of answers, three language suggestions will be displayed (Ruby, C#, and JavaScript). Users may also be suggested to learn other languages (Python, Go, and Rust), if the combination of their answers isn't best suited to Ruby, C#, or JavaScript. If users want to answer the questions again, they can reset their answers after submitting the form.
+This application allows users who are new to coding to answer five "yes" or "no" questions to determine which programming language they should learn first. Depending on the combination of answers, three language suggestions will be displayed (Ruby, C#, and JavaScript). Users may also be suggested to learn other languages (Python, Go, and Rust), if the combination of their answers isn't best suited to Ruby, C#, or JavaScript. If users want to answer the questions again, they can reset their answers after submitting the form. Application can be accessed here: https://bscherner.github.io/language-suggester/
 
 ## Setup/Installation Requirements
 
