@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 		<script src="js/scripts.js"></script>
 		<title>Programming Language Suggester</title>
 	</head>
 	<body>
-		<h1>Programming Language Suggester</h1>
-		<h2>New to coding? Where would you like to start?</h2>
-		<p>Deciding on which programming language you would like to learn to get started with coding can be intimidating. There are so many different languages to choose from, and while all of them are useful, there are certain advantages and disadvantages to certain languages. That's why this app will help decide that for you!</p>
-		<h3>Answer the following questions with "yes" or "no" to get suggestions on which language you should learn first!</h3>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Programming Language Suggester</h1>
+				<h2>New to coding? Where would you like to start?</h2>
+			</div>
 
-		<form>
-			<label for="questOne">Would you prefer to focus on simplicity and productivity?</label>
-			<input id="questOne" type="text" name="questOne">
-			<br>
-			<label for="questTwo">Do you want to build many types of secure and robust applications?</label>
-			<input id="questTwo" type="text" name="questTwo">
-			<br>
-			<label for="questThree">Do you want to start with the most common programming language?</label>
-			<input id="questThree" type="text" name="questThree">
-			<br>
-			<label for="questFour">Do you want to write as little code as you need to?</label>
-			<input id="questFour" type="text" name="questFour">
-			<br>
-			<label for="questFive">Would you like to start with a relatively easy language?</label>
-			<input id="questFive" type="text" name="questFive">
-			<br>
-			<button type="submit">Find your language!</button>
-		</form>
-		<br>
-		<button type="reset" class="hidden" id="reset">Reset</button>
+			<p>Deciding on which programming language you would like to learn to get started with coding can be intimidating. There are so many different languages to choose from, and while all of them are useful, there are certain advantages and disadvantages to certain languages. That's why this app will help decide that for you!</p>
+			<h3>Answer the following questions with "yes" or "no" to get suggestions on which language you should learn first!</h3>
 
-		<h2>Results</h2>
-		<div id="ruby" class="hidden">
-			Based on your answers, you should learn Ruby as your first programming language.
-		</div>
+			<form>
+				<label for="questOne">Would you prefer to focus on simplicity and productivity?</label>
+				<input id="questOne" type="text" name="questOne">
+				<br>
+				<label for="questTwo">Do you want to build many types of secure and robust applications?</label>
+				<input id="questTwo" type="text" name="questTwo">
+				<br>
+				<label for="questThree">Do you want to start with the most common programming language?</label>
+				<input id="questThree" type="text" name="questThree">
+				<br>
+				<label for="questFour">Do you want to write as little code as you need to?</label>
+				<input id="questFour" type="text" name="questFour">
+				<br>
+				<label for="questFive">Would you like to start with a relatively easy language?</label>
+				<input id="questFive" type="text" name="questFive">
+				<br>
+				<button type="submit">Find your language!</button>
+			</form>
+			<br>
+			<button type="reset" class="hidden" id="reset">Reset</button>
 
-		<div id="csharp" class="hidden">
-			Based on your answers, you should learn C# as your first programming language.
-		</div>
+			<h2>Results</h2>
+			<div id="ruby" class="hidden">
+				Based on your answers, you should learn Ruby as your first programming language.
+			</div>
 
-		<div id="javascript" class="hidden">
-			Based on your answers, you should learn JavaScript as your first programming language.
+			<div id="csharp" class="hidden">
+				Based on your answers, you should learn C# as your first programming language.
+			</div>
+
+			<div id="javascript" class="hidden">
+				Based on your answers, you should learn JavaScript as your first programming language.
+			</div>
 		</div>
 	</body>
 </html>
