@@ -8,23 +8,23 @@ window.addEventListener("load", function() {
 	form.addEventListener("submit", function(event) {
 		const yes = "yes";
 		const no = "no";
-		const q1 = document.getElementById("q1").value.toLowerCase();
-		const q2 = document.getElementById("q2").value.toLowerCase();
-		const q3 = document.getElementById("q3").value.toLowerCase();
-		const q4 = document.getElementById("q4").value.toLowerCase();
-		const q5 = document.getElementById("q5").value.toLowerCase();
+		const questOne = document.getElementById("questOne").value.toLowerCase();
+		const questTwo = document.getElementById("questTwo").value.toLowerCase();
+		const questThree = document.getElementById("questThree").value.toLowerCase();
+		const questFour = document.getElementById("questFour").value.toLowerCase();
+		const questFive = document.getElementById("questFive").value.toLowerCase();
 
 		ruby.setAttribute("class", "hidden");
 		csharp.setAttribute("class", "hidden");
 		javascript.setAttribute("class", "hidden");
 		event.preventDefault();
 
-		if (q1 && q2 && q3 && q4 && q5) {
-			if (q1 === yes && q2 === yes && q3 === no || q4 === no && q5 === no) {
+		if (questOne && questTwo && questThree && questFour && questFive) {
+			if (questOne === yes && questTwo === yes && questThree === no || questFour === no && questFive === no) {
 				document.getElementById("ruby").removeAttribute("class");
-			} else if (q1 === no && q2 === yes && q3 === no || q4 === yes && q5 === yes) {
+			} else if (questOne === no && questTwo === yes && questThree === no || questFour === yes && questFive === yes) {
 				document.getElementById("csharp").removeAttribute("class");
-			} else if (q1 === no && q2 === yes && q3 === yes || q4 === no && q5 === yes) {
+			} else if (questOne === no && questTwo === yes && questThree === yes || questFour === no && questFive === yes) {
 				document.getElementById("javascript").removeAttribute("class");
 			}
 		}
@@ -39,10 +39,10 @@ window.addEventListener("load", function() {
 		ruby.setAttribute("class", "hidden");
 		csharp.setAttribute("class", "hidden");
 		javascript.setAttribute("class", "hidden");
-		document.getElementById("q1").value = null;
-		document.getElementById("q2").value = null;
-		document.getElementById("q3").value = null;
-		document.getElementById("q4").value = null;
-		document.getElementById("q5").value = null;
+		document.getElementById("questOne").value = null;
+		document.getElementById("questTwo").value = null;
+		document.getElementById("questThree").value = null;
+		document.getElementById("questFour").value = null;
+		document.getElementById("questFive").value = null;
 	});
 });
